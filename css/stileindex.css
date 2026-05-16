@@ -1,0 +1,129 @@
+
+.checker {
+  display: none;
+}
+
+
+.hamburger {
+  
+  position: fixed;    
+  top: 20px;          
+  right: 20px;        
+  
+  
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 30px;
+  z-index: 1001;      
+}
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%; 
+  width: 250px;
+  height: 100%;
+  background: #eee;
+  padding-top: 60px;
+  transition: 0.4s;
+}
+
+
+.checker:checked ~ .menu {
+  right: 0;
+}
+
+
+.checker:checked ~ .hamburger span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+.checker:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
+.checker:checked ~ .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(6px, -7px); }
+
+*{
+margin: 0;
+padding: 0;
+
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#C9D8FF;
+}
+
+#titolo-principale {
+background-color: #0a66c2;
+width: 100%;
+padding-top: 10px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 5px;
+font-size: 15px;
+text-align: center;
+color: rgb(210, 253, 247)
+}
+
+#linkedin {
+  color: #0a66c2;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#titolum{
+margin-top: 20px;
+text-align: center;
+} 
+
+#chubafot {
+margin-left: 60px;
+margin-top: 40px ;
+}
+
+#chubatasto {
+margin-left: 20px;
+border: 2px solid black;
+border-radius: 5px;
+background-color: #0a66c2;
+color: rgb(255, 255, 255);
+text-decoration: none; /* ecco come tolgo la lineaaa*/
+padding: 1px;
+}
+
+#err{
+margin-top: 50px;
+margin-left: 10px;
+} 
+
+#boxfinale {
+background-color: #0a66c2;
+width: 100%;
+padding-top: 10px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 5px;
+font-size: 15px;
+text-align: center;
+margin-top: 800px;
+} 
+
+#boxfinale {
+background-color: #0a66c2;
+width: 100%;
+padding-top: 10px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 5px;
+font-size: 15px;
+text-align: center;
+margin-top: 800px;
+} 
